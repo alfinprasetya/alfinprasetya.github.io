@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+/*----Variables----*/
+:root {
+	--bg-color: #2a2f3f;
+	--font: #f6f7f9;
+	--accent: #bccf31;
+}
 
+/*----Global----*/
 * {
 	margin: 0;
 	padding: 0;
@@ -7,32 +13,107 @@
 }
 
 body {
-	font-family: 'Oswald', sans-serif;
-	background-color: #2a2f3f;
-	background: url(/img/show.jpg) no-repeat;
-	background-size: cover;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: var(--font);
+	letter-spacing: 0.02em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
 	letter-spacing: 0.1em;
-	color: #f6f7f9;
 }
 
+p {
+	font-size: 0.95em;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+button {
+	background-color: var(--bg-color);
+	border: solid var(--accent);
+	color: var(--font);
+	padding: 1em 2em;
+	border-radius: 2em;
+	font-size: 1em;
+}
+
+/*----Header----*/
 header {
+	position: sticky;
+	top: 0;
 	display: grid;
-	width: 100%;
+	width: 90%;
 	grid-template-columns: 80% 20%;
+	margin: 0 auto;
+	margin-top: 2em;
+	font-size: 0.8em;
+	align-items: center;
 }
 
-header div {
-	padding: 2em;
-	padding-left: 10%;
-	letter-spacing: 0.3em;
+header span {
+	color: var(--accent);
 }
 
-header div span {
-	color: #bccf31;
+header .main-nav {
+	text-align: right;
+	font-size: 1.6em;
 }
 
-header nav {
-	padding: 2em;
-	padding-right: 10%;
+/*----Showcase----*/
+.showcase {
+	display: flex;
+	background: url(/img/show.jpg) center no-repeat;
+	background-size: cover;
+	height: 80vh;
+	margin: -5em 0em;
+	align-items: center;
+	justify-content: center;
+}
+
+.showcase .headline {
+	font-size: 1.5em;
 	text-align: center;
+	margin-top: -5em;
+	padding: 0.5em;
+}
+
+/*----Profile----*/
+.profile {
+	background-image: linear-gradient(
+		#00000000,
+		rgb(42, 47, 63, 0.3) 5%,
+		var(--bg-color) 10%
+	);
+	padding: 1.5em 0;
+	max-height: 70vh;
+}
+
+.profile h1 {
+	font-size: 1.7em;
+}
+
+.profile button {
+	display: flex;
+	justify-content: space-between;
+}
+
+.profile button i {
+	display: none;
+}
+
+.profile button:hover {
+	background-color: var(--accent);
+	color: var(--bg-color);
+	width: 13em;
+}
+
+.profile button:hover i {
+	display: block;
 }
