@@ -1,18 +1,12 @@
-import './App.css'
+import Headline from './fragments/headline'
+import Navbar from './fragments/navbar'
 
 function App() {
   return (
-    <nav> 
-      <div><h1>LOGO</h1></div>
-      <div className='menu'>
-        <a href="/">About</a>
-        <a href="/">Portofolio</a>
-        <a href="/">Contact</a>
-      </div>
-      <div>
-        <input type="search" name="search" id="" style={{width: "100%"}}/>
-      </div>
-    </nav>
+    <>
+      <Navbar />
+      <Headline />
+    </>
   )
 }
 

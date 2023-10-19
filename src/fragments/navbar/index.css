@@ -1,9 +1,13 @@
 nav {
+    position: sticky;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 4rem;
+    background: #34353C;
     box-sizing: border-box;
+    top: 0;
 }
 
 .menu {
