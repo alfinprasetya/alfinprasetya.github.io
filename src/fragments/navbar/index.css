@@ -10,11 +10,12 @@ nav {
     top: 0;
 }
 
-.menu {
+nav .menu {
     display: flex;
     align-items: center;
 }
 
-.menu a {
+nav .menu a {
     padding: 0 1rem;
+    text-decoration: none;
 }
