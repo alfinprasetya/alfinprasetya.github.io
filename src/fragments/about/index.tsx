@@ -14,23 +14,23 @@ export default function About() {
                     <h1>My Expertise</h1>
                     <div className="skill-box-grid">
                         <div className="skill-box">
-                            <i className="fa-brands fa-node"></i>
+                            <i style={{color: 'greenyellow'}} className="fa-brands fa-node"></i>
                             <h2>Node.js</h2>
                         </div>
                         <div className="skill-box">
-                            <i className="fa-brands fa-square-js"></i>
+                            <i style={{color: 'yellow'}} className="fa-brands fa-square-js"></i>
                             <h2>Javascript</h2>
                         </div>
                         <div className="skill-box">
-                            <i className="fa-brands fa-react"></i>
+                            <i style={{color: 'turquoise'}} className="fa-brands fa-react"></i>
                             <h2>React</h2>
                         </div>
                         <div className="skill-box">
-                            <i className="fa-brands fa-android"></i>
+                            <i style={{color: 'lightgreen'}} className="fa-brands fa-android"></i>
                             <h2>Android</h2>
                         </div>
                         <div className="skill-box">
-                            <i className="fa-brands fa-html5"></i>
+                            <i style={{color: 'orange'}} className="fa-brands fa-html5"></i>
                             <h2>HTML</h2>
                         </div>
                     </div>

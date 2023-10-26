@@ -3,23 +3,23 @@
     height: calc(100vh - 4rem);
 }
 
-.text-box {
+.headline .text-box {
     position: absolute;
     top: 30%;
     left: 10%;
     width: 40%;
 }
 
-.text-box h1 {
+.headline .text-box h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.text-box h2 {
+.headline .text-box h2 {
     font-size: 2rem;
 }
 
-button {
+.headline button {
     margin-top: 1rem;
     margin-left: 1rem;
     font-size: 1rem;
@@ -31,7 +31,7 @@ button {
     border-radius: 5px;
 }
 
-.headline-image {
+.headline .headline-image {
     position: absolute;
     right: 10%;
     bottom: 0;
@@ -40,7 +40,7 @@ button {
     height: 500px;
 }
 
-.icons {
+.headline .icons {
     display: flex;
     flex-direction: column;
     justify-content: center;

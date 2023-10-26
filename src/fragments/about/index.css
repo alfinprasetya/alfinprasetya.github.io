@@ -1,35 +1,36 @@
 #about {
     width: 100%;
     margin-top: 3rem;
-    height: calc(100vh - 4rem);
+    height: 100vh;
 }
 
-.container {
+#about .container {
     width: 90%;
     height: 100%;
     margin: 0 auto;
+    padding-top: 4rem;
 }
 
-.about-text h1 {
-    padding-top: 2rem;
+#about .about-text h1 {
+    padding-top: 3rem;
 }
 
-.about-text p {
+#about .about-text p {
     padding: 2rem;
 }
 
-.skill h1 {
+#about .skill h1 {
     text-align: center;
 }
 
-.skill-box-grid {
+#about .skill-box-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 30px;
     padding-top: 3rem;
 }
 
-.skill-box {
+#about .skill-box {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -41,10 +42,10 @@
     transition: background 500ms ease;
 }
 
-.skill-box:hover {
-    background: orange;
+#about .skill-box:hover {
+    background: gray;
 }
 
-.skill-box i {
+#about .skill-box i {
     font-size: 6rem;
 }
